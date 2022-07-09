@@ -1,0 +1,568 @@
+@charset "utf-8";
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+    margin: 0 auto;
+    text-align: center;
+    font-family:"moritaゴシック","Morita Gothic"}
+
+
+ul{
+list-style: none;
+    }
+.menu{
+    font-family:"游明朝体 Demibold","YuMincho Demibold";
+}
+
+h1{
+    height: 143px;
+    display: flex;
+}
+h1 img{
+width: 96px;
+height: 126px;
+padding-left: 40px;
+}
+.pc_nav{
+    font-size: 30px;
+    width: 571px;
+    height: 40px;
+    padding: 50px 18% 0 42%;
+
+}
+.h2_logo{
+padding-right: 1%;
+}
+.pc_nav ul{
+    max-width: 100%;
+    display: flex;
+    text-align: right;
+}
+.pc_nav li{
+    border-bottom: solid;
+    border-color:#fef007;
+    border-width: 10px;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.shop_picture{
+    max-width: 100%;
+}
+h2{
+    display: flex;
+    max-width: 1200px;
+}
+.main_picture{
+    max-width: 850px;
+}
+h2 li{
+    padding-top: 40px;
+}
+.h2_name{
+    font-size: 60px;
+}
+.h2_sub{
+    font-size: 30px;
+}
+.h2_copy{
+    font-size: 36px;
+}
+.scroll{
+    font-size: 40px;
+    margin-top: 65px;
+}
+
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: #fef007;
+    position: relative;top: -50px;right: -130px;
+    z-index: -100;
+
+}
+.box2{
+    margin: 0 auto 5%;
+    background-color: #fef007;
+    width: 10px;
+    height: 120px;
+}
+.box3{
+    width: 50px;
+    height: 50px;
+    background-color: #fef007;
+    position: relative;top: -100px;right: -150px;
+    z-index: -1;
+}
+.about_pc{
+    max-width: 100%;
+    height: 983px;
+    background-color: #CCCCCC;
+}
+.main_text{
+    margin-left: 15%;
+    font-size: 60px;
+    height: 650px;
+    z-index: 10;
+    max-width: 100%;
+}
+.about_text{
+    position: relative;top :-60px;
+}
+.about_sub{
+    margin-top: 0;
+    font-size: 25px;
+    position: relative;top :-70px;
+    text-align: center;
+}
+
+h3{
+    font-size: 70px;
+}
+.about_us{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about_fhoto{
+    max-width: 100%;
+}
+.main_text p{
+    text-align: initial;
+}
+.name{
+    font-size: 30px;
+}
+.address1{
+    font-size: 18px;
+}
+.main_text img{
+    position: relative;top: -45px;left: -14px;
+}
+.main_keireki{
+    font-size: 39px;
+    position: relative;top:-55px;
+    line-height: 55px;
+}
+
+.keireki{
+    border-style: solid;
+    max-width: 60px;
+    font-size: 16px;
+    padding-left: 20px;
+    position: relative;top: -50px;
+    margin-left: 0;
+}
+.keireki_text{
+    font-size: 16px;
+    position: relative;top:-40px;
+}
+.work_text{
+    margin-top: 250px;
+}
+.work_sub{
+    text-align: center;
+    font-size: 25px;
+    position: relative;top: -20px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.photo1{
+    max-width: 450px;
+    background-color: #000000;
+}
+.work_btn{
+    color: #ffffff;
+    background-color: #000000;
+    width: 435px;
+    height: 80px;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin:130px auto 210px;
+    line-height: 80px;
+
+}
+.work_btn_text{
+    display: flex;
+}
+.work_btn_text2{
+    color: #fef007;
+    margin-left: 0;
+}
+.contact_form{
+    background-color: #FFFCBE;
+    width: 100%;
+    height: 1150px;
+}
+.contact_form img{
+    position: relative;top: -15px;
+    width: 100%;
+}
+
+.contact_sub{
+    font-size: 25px;
+position: relative;top: -20px;
+}
+.contact_form label{
+    font-size: 25px;
+    text-align: left;
+} 
+.contact_form input{
+    font-size: 25px;
+    width: 100%;
+}
+.contact_form textarea{
+    font-size: 50px;
+    width: 100%;
+}
+.contact_input{
+    width: 42%;
+    margin: 130px ;
+    margin-left: 29%;
+    line-height: 46px;
+}
+.contact_input p{
+    text-align: initial;
+}
+
+.contact_btn{
+    margin: 60px auto;
+    align-items: center;
+    font-size: 40px;
+    color: #CCCCCC;
+    background-color: #000000;
+    width: 400px;
+    height: 80px;
+    text-decoration: none;
+    border-radius: 10px;
+    line-height: 80px;
+}
+.footer1{
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.main_picture_sp{
+    display: none;
+}
+.sp_main{
+    display: none;
+}
+.aboutfhoto_sp{
+    display: none;
+}
+.main_picture_sp_text1{
+    display: none;
+}
+.main_picture_sp_text2{
+    display: none;
+}
+.about_sp{
+    display: none;
+}
+.sp_mainv{
+    display: none;
+}
+.work_sp{
+    display: none;
+}
+.contactform_sp{
+    display: none;
+}
+.footersp{
+    display: none;
+}
+.list{
+    display: none;
+}
+.sp_nav{
+    display: none;
+}
+@media (max-width: 850px) {
+    .header_logo,.shop_picture,.pc_nav,h2 ul{
+        display: none;
+    }
+    .sp_main{
+        display: block;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 25px;
+    }
+    .sp_nav{
+        display: block;
+    }
+    .sp_btn{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        text-align: initial;
+    }
+    .sp_btn span{
+        background-color: #000000;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        top: 20px;
+    }
+    .sp_btn span::before,.sp_btn span::after{
+        content:"";
+        width: 30px;
+        height: 3px;
+        background-color: #000000;
+        position:absolute;
+    }
+    .sp_btn span::before{
+        top:10px;
+    }
+    .sp_btn span::after{
+        bottom: 10px;
+    }
+    .open span{
+        background: transparent;
+    }
+    .open span::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .open span::after{
+        top: 0;
+        transform: rotate(135deg);
+    }
+    .h2_logo{
+        display: none;
+    }
+    .sp_mainv{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .mainsp_pic{
+        display: flex;
+        max-width: 687px;
+    }
+    .main_picture_sp{
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+    .main_picture_sp img{
+        max-width: 100%;
+    }
+    .main_picture_sp_text::first-line{
+        font-size: 25px;
+        text-align: right;
+        display: block;
+        max-width: 687px;
+        position: relative;bottom: -71px;
+    }
+    .main_picture_sp_text{
+        font-size: 18px;
+        text-align: right;
+        display: block;
+        max-width: 687px;
+        position: relative;bottom: -70px;
+        font-family:"游明朝体 Demibold","YuMincho Demibold";
+    }
+    .sp_39logo{
+        position: relative;right: -40px;
+        max-width: 40%;
+    }
+    .menu{
+        margin-top: 155px;
+    }
+    .box2{
+        margin: 20px auto 70px;
+    }
+    .about_pc{
+        display: none;
+    }
+    .aboutfhoto_sp{
+        display: block;
+        max-width: 50%;
+        margin: 2%;
+        position: relative;top: -130px;
+        align-self: flex-start;
+    }
+    .about{
+        max-width: 687px;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+    .about_sp{
+        display: block;
+        background-color: #CCCCCC;
+        position: relative;top: 133px;
+        max-width: 687px;
+        margin: 0 auto;
+        z-index: 10;
+    }
+    .abouttext_sp{
+        display: flex;
+        max-width: 575px;
+        margin: 0 auto;
+    }
+    .menu_sp{
+        font-size: 55px;
+        font-family:"游明朝体 Demibold","YuMincho Demibold";
+        position: relative;top: -47px;
+    }
+    .menu_sp::after{
+        content: "自己紹介";
+        font-size: 18px;
+        font-family:"moritaゴシック","Morita Gothic" ;
+        position: absolute;bottom: -10px;left: 0;right: 0;
+    }
+    .name_sp{
+        font-size: 150%;
+        z-index: 1000;
+    }
+    .box3_sp{
+        background-color: #fef007;
+        max-width: 15%;
+        position: relative;top: -115px;left: 128px;
+        z-index: -1;
+    }
+    .box3_sp::before{
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+    .main_keireki_sp{
+        font-size: 135%;
+        margin: 0 auto;
+        position: relative;top: -130px;left: -10px;
+    }
+    .keireki_sp{
+        border-style: solid;
+        max-width: 60px;
+        position: relative;top: -120px;left: -250px;
+    }
+    .keirekitext_sp{
+        text-align: left;
+        position: relative;top: -100px;
+        margin: 5%;
+    }
+    .work{
+        display: none;
+    }
+    .work_sp{
+        display: block;
+    }
+    .works_sp{
+        margin-top: 230px;
+        font-size: 55px;
+        font-family:"游明朝体 Demibold","YuMincho Demibold";
+    }
+    .worksub_sp{
+        font-size: 18px;
+        position: relative;top: -16px;
+    }
+    .list_sp{
+        background-color: #FFFCBE;
+        max-width: 767px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    .workbtn_sp{
+        background-color: #000000;
+        max-width: 320px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    .btntext_sp{
+        display: flex;
+        color: #ffffff;
+    }
+    .btntextsp_1{
+        margin-right: 0px;
+        font-size: 29px;
+    }
+    .btntextsp_2{
+        color: #fef007;
+        margin-left: 0px;
+        font-size: 29px;
+    }
+    .contact_form{
+        display: none;
+    }
+    .contactform_sp{
+        display: block;
+    }
+    .contactform_sp img{
+        max-width: 100%;
+        margin-top: 200px;
+    }
+    .contact_sp{
+        font-size: 55px;
+        font-family:"游明朝体 Demibold","YuMincho Demibold";
+    }
+    .cform_spback{
+        background-color: #CCCCCC;
+        position: relative;top: -6px;
+        padding-bottom: 20px;
+    }
+    .csub_sp{
+        font-size: 18px;
+        position: relative;top: -18px;
+    }
+    .cinput_sp{
+        max-width: 578px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .cinput_sp input{
+        max-width: 578px;
+        margin: 0px;
+    }
+    .contactsp_btn{
+        color: #ffffff;
+        font-size: 29px;
+        background-color: #000000;
+        max-width: 320px;
+        margin: 50px auto;
+        border-radius: 10px;
+        text-decoration: none;
+        max-height: 1058px;
+    }
+    .footersp{
+        display: block;
+        display: flex;
+        max-width: 630px;
+        margin: 30px auto;
+    }
+    .footer1{
+        display: none;
+    }
+    .f_sptext1{
+        font-size: 28px;
+    }
+    .f_sptext2{
+        font-size: 18px;
+    }
+    .list{
+        display: none;
+    }
+    .list_sp{
+        display: none;
+    }
+        
+    }
