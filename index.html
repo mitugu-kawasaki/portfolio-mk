@@ -5,8 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>川﨑 貢ポートフォリオサイト</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
     <body>
         <header>
@@ -14,9 +18,9 @@
                 <img src="images/ヘッダーロゴ.png" alt="ヘッターロゴ" class="header_logo"/>
                 <nav class="pc_nav">
                     <ul>
-                        <li class="menu"><a></a>about</li>
-                        <li class="menu">works</li>
-                        <li class="menu">contact</li>
+                        <li class="menu"><a href="#About">about</a></li>
+                        <li class="menu"><a href="#Work">works</a></li>
+                        <li class="menu"><a href="#Contact">contact</a></li>
                     </ul>
                 </nav>
                 <div class="sp_main">
@@ -46,34 +50,30 @@
                     </ul>
                 </div>
                 <div class="main_picture">
-                    <img src="images/shop_Photo.jpg"
-                        alt="店内内装" class="shop_picture">
+                    <img src="images/shop_Photo.jpg" alt="店内内装" class="shop_picture"><img src="images/shop_Photo.jpg" alt="店内内装" class="shop_picture">
                 </div>
             </h2>
             <div class="sp_mainv">
                 <div class="mainsp_pic">
                     <img src="images/spmain_logo.png" alt="39logo" class="sp_39logo">
-                    <div class="main_picture_sp"><img src="images/shop_Photo_sp.jpg" alt="店内写真">
-                    </div> 
+                    <div class="main_picture_sp"><img src="images/shop_Photo_sp.jpg" alt="店内写真"> </div> 
                 </div>
                  <div class="main_picture_sp_text">
                      「ありがとう｣に貢献します!<br>サンキュー（感謝）の気持ちをお客様と分かち合います。３２９（みつぐ）。
                  </div>
-                </div>
             </div>
         </header>
         <div class="scroll"><p class="menu">scroll</p></div>
         <div class="box2"></div>
         <div class="about_pc">
             <div class="about_text">
-                <h3 class="menu">about</h3>
+                <h3 class="menu" id="About">about</h3>
             </div>
             <p class="about_sub">自己紹介</p>
             <div class="about_us">
                 <img src="images/about_Photo.jpg" alt="紹介画像" class="about_fhoto">
                 <div class="main_text">
-                    <p>川﨑貢</p>
-                    <div class="box3"></div>
+                    <p>川﨑貢<span class="box3"></span></p>
                     <p class="name">MITSUGU KAWASAKI</p>
                     <p class="address1">大阪在住｜佐賀県　唐津出身</p>
                     <img src="images/name_line.png" alt="アンダーライン" />
@@ -102,12 +102,11 @@
                 <div class="about">
                     <p class="menu_sp">about</p>
                     <div>
-                        <p class="name_sp">川﨑　貢</p>
+                        <p class="name_sp">川﨑　貢<span class="box3_sp"></span></p>
                         <p>MITSUGU  KAWASAKI<br>
                             大阪在住｜佐賀県　唐津出身
                         </p>
                     </div>
-                    <div class="box3_sp"></div>
                 </div>
             </div>
             <h3 class="main_keireki_sp">「ドキドキ、ワクワク」が大好きな店長</h3>
@@ -122,7 +121,7 @@
                 とにかく楽しい方へと進んだ結果、自分のサイトにも手を出してます。<br />
                 気になる事あれば、お気軽にお問合せください。</p>
         </div>
-        <div class="work">
+        <div class="work" id="Work">
             <div class="work_text">
             <h3 class="menu">works</h3></div>
         <div class="work_sub"><p>実績</p></div>
@@ -176,7 +175,7 @@
                    </div>
             </div>
         </div>
-        <div class="contact_form">
+        <div class="contact_form" id="Contact">
             <img src="images/contact_line.png" alt="ライン" />
             <h3 class="menu">contact</h3>
             <p class="contact_sub">お問合せ</p>
@@ -225,7 +224,13 @@
             $(function(){
                 $(".sp_btn,.sp_nav li").click(function(){
                     $(".sp_nav").slideToggle();
-                $(".sp_nav").toggleClass("open")})
+                $(".sp_btn").toggleClass("open")});
+                $(".main_picture").slick({
+                    autoplayspeed:2000,
+                    autoplay:true,
+                    
+                });
+
             })
         </script>
     </body>

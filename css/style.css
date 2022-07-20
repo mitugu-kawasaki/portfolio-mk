@@ -12,16 +12,17 @@ ul,
 li,
 p,
 dl {
-    margin: 0 auto;
+    margin: 0 ;
+    padding: 0;
     text-align: center;
-    font-family:"moritaゴシック","Morita Gothic"}
+    font-family:"moritaゴシック","Morita Gothic","sans-serif";}
 
 
 ul{
 list-style: none;
     }
 .menu{
-    font-family:"游明朝体 Demibold","YuMincho Demibold";
+    font-family:"游明朝体 Demibold","YuMincho Demibold","serif";
 }
 
 h1{
@@ -65,7 +66,7 @@ h2{
     max-width: 1200px;
 }
 .main_picture{
-    max-width: 850px;
+    width: 50%;
 }
 h2 li{
     padding-top: 40px;
@@ -104,6 +105,7 @@ h2 li{
     background-color: #fef007;
     position: relative;top: -100px;right: -150px;
     z-index: -1;
+    display: block;
 }
 .about_pc{
     max-width: 100%;
@@ -160,9 +162,11 @@ h3{
     border-style: solid;
     max-width: 60px;
     font-size: 16px;
-    padding-left: 20px;
     position: relative;top: -50px;
     margin-left: 0;
+}
+.main_text .keireki{
+    text-align: center;
 }
 .keireki_text{
     font-size: 16px;
@@ -297,7 +301,7 @@ position: relative;top: -20px;
     display: none;
 }
 @media (max-width: 850px) {
-    .header_logo,.shop_picture,.pc_nav,h2 ul{
+    .header_logo,.main_picture,.shop_picture,.pc_nav,h2 ul{
         display: none;
     }
     .sp_main{
@@ -307,8 +311,15 @@ position: relative;top: -20px;
         padding-left: 25px;
     }
     .sp_nav{
-        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #CCCCCC;
+        z-index: 50;
     }
+
     .sp_btn{
         width: 50px;
         height: 50px;
@@ -316,6 +327,7 @@ position: relative;top: -20px;
         top: 20px;
         right: 10px;
         text-align: initial;
+        z-index: 100;
     }
     .sp_btn span{
         background-color: #000000;
@@ -380,8 +392,7 @@ position: relative;top: -20px;
         text-align: right;
         display: block;
         max-width: 687px;
-        position: relative;bottom: -70px;
-        font-family:"游明朝体 Demibold","YuMincho Demibold";
+        font-family:"游明朝体 Demibold","YuMincho Demibold","serif";
     }
     .sp_39logo{
         position: relative;right: -40px;
@@ -400,7 +411,7 @@ position: relative;top: -20px;
         display: block;
         max-width: 50%;
         margin: 2%;
-        position: relative;top: -130px;
+        margin-top: -130px;
         align-self: flex-start;
     }
     .about{
@@ -411,10 +422,9 @@ position: relative;top: -20px;
     .about_sp{
         display: block;
         background-color: #CCCCCC;
-        position: relative;top: 133px;
         max-width: 687px;
-        margin: 0 auto;
-        z-index: 10;
+        margin: 263px auto 0;
+
     }
     .abouttext_sp{
         display: flex;
@@ -423,34 +433,28 @@ position: relative;top: -20px;
     }
     .menu_sp{
         font-size: 55px;
-        font-family:"游明朝体 Demibold","YuMincho Demibold";
+        font-family:"游明朝体 Demibold","YuMincho Demibold","serif";
         position: relative;top: -47px;
     }
     .menu_sp::after{
         content: "自己紹介";
         font-size: 18px;
-        font-family:"moritaゴシック","Morita Gothic" ;
+        font-family:"moritaゴシック","Morita Gothic",sans-serif ;
         position: absolute;bottom: -10px;left: 0;right: 0;
     }
     .name_sp{
-        font-size: 150%;
-        z-index: 1000;
+        font-size: 4vw;
+        position: relative;
     }
     .box3_sp{
         background-color: #fef007;
-        max-width: 15%;
-        position: relative;top: -115px;left: 128px;
-        z-index: -1;
-    }
-    .box3_sp::before{
-        content: "";
-        display: block;
-        padding-top: 100%;
+        width: 10px;
+        height: 10px;
     }
     .main_keireki_sp{
         font-size: 135%;
         margin: 0 auto;
-        position: relative;top: -130px;left: -10px;
+        margin-left: -10px;
     }
     .keireki_sp{
         border-style: solid;
@@ -459,7 +463,7 @@ position: relative;top: -20px;
     }
     .keirekitext_sp{
         text-align: left;
-        position: relative;top: -100px;
+        margin-top: -100px;
         margin: 5%;
     }
     .work{
@@ -471,7 +475,7 @@ position: relative;top: -20px;
     .works_sp{
         margin-top: 230px;
         font-size: 55px;
-        font-family:"游明朝体 Demibold","YuMincho Demibold";
+        font-family:"游明朝体 Demibold","YuMincho Demibold","serif";
     }
     .worksub_sp{
         font-size: 18px;
@@ -492,6 +496,7 @@ position: relative;top: -20px;
     .btntext_sp{
         display: flex;
         color: #ffffff;
+        justify-content: center;
     }
     .btntextsp_1{
         margin-right: 0px;
@@ -514,7 +519,7 @@ position: relative;top: -20px;
     }
     .contact_sp{
         font-size: 55px;
-        font-family:"游明朝体 Demibold","YuMincho Demibold";
+        font-family:"游明朝体 Demibold","YuMincho Demibold","serif";
     }
     .cform_spback{
         background-color: #CCCCCC;
@@ -532,12 +537,12 @@ position: relative;top: -20px;
         line-height: 36px;
     }
     .cinput_sp input{
-        max-width: 578px;
+        width: 80%;
         margin: 0px;
     }
     .contactsp_btn{
         color: #ffffff;
-        font-size: 29px;
+        font-size: 129%;
         background-color: #000000;
         max-width: 320px;
         margin: 50px auto;
