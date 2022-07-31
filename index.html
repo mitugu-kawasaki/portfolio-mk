@@ -14,7 +14,7 @@
     </head>
     <body>
         <header>
-            <h1>
+            <div class="topnav">
                 <img src="images/ヘッダーロゴ.png" alt="ヘッターロゴ" class="header_logo"/>
                 <nav class="pc_nav">
                     <ul>
@@ -27,24 +27,23 @@
                     <p>WebDesign&Coding</p>
                     <p>MITSUGU KAWASAKI</p>
                 </div>
-            </h1>
+            </div>
             <div class="sp_btn"><span></span></div>
                 <div class="sp_nav">
                     <ul>
-                        <li>about</li>
-                        <li>works</li>
-                        <li>contact</li>
+                        <li><a href="#SP_about">about</a></li>
+                        <li><a href="#SP_works">works</a></li>
+                        <li><a href="#SP_contact">contact</a></li>
                     </ul>
                 </div>
             </div>
-            <h2>
+            <div class="top_text">
                 <div class="h2_logo">
                     <img src="images/main_logo.png" alt="39logo" />
                     <ul>
                         <li class="h2_copy">
-                            ｢ありがとう｣に<br / > 貢献します！
+                            ｢ありがとう｣に<br / > 貢献します！<span class="box1"></span>
                         </li>
-                        <div class="box1"></div>
                         <li class="h2_name">MITSUGU KAWASAKI</li>
                         <li class="h2_sub">WebDesign&Coding</li>
                     </ul>
@@ -52,7 +51,7 @@
                 <div class="main_picture">
                     <img src="images/shop_Photo.jpg" alt="店内内装" class="shop_picture"><img src="images/shop_Photo.jpg" alt="店内内装" class="shop_picture">
                 </div>
-            </h2>
+            </div>
             <div class="sp_mainv">
                 <div class="mainsp_pic">
                     <img src="images/spmain_logo.png" alt="39logo" class="sp_39logo">
@@ -100,9 +99,9 @@
             <div class="abouttext_sp">
                 <img src="images/about_photo_sp.jpg" alt="紹介画像" class="aboutfhoto_sp">
                 <div class="about">
-                    <p class="menu_sp">about</p>
-                    <div>
-                        <p class="name_sp">川﨑　貢<span class="box3_sp"></span></p>
+                    <p class="menu_sp" id="SP_about">about</p>
+                    <div class="SP_nametext">
+                        <p class="name_sp">川﨑 貢<span class="spbox3"></span></p>
                         <p>MITSUGU  KAWASAKI<br>
                             大阪在住｜佐賀県　唐津出身
                         </p>
@@ -149,7 +148,7 @@
         </div>
         </div>
         <div class="work_sp">
-            <h3 class="works_sp">works</h3>
+            <h3 class="works_sp" id="SP_works">works</h3>
             <p class="worksub_sp">実績</p>
             <div class="list_sp">
                 <div class="photo1_sp">
@@ -198,7 +197,7 @@
         <div class="contactform_sp">
             <img src="images/contact_line.png" alt="ライン" />
             <div class="cform_spback">
-                <h3 class="contact_sp">contact</h3>
+                <h3 class="contact_sp" id="SP_contact">contact</h3>
                 <p class="csub_sp">お問合せ</p>
                 <div class="cinput_sp">
                     <p><label>お名前</label></p><input type="text" name="">

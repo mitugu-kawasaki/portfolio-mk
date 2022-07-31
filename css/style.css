@@ -24,30 +24,35 @@ list-style: none;
 .menu{
     font-family:"游明朝体 Demibold","YuMincho Demibold","serif";
 }
-
-h1{
+a:hover{
+    color: #fef007;
+}
+a{
+    text-decoration: none;
+}
+.topnav{
     height: 143px;
     display: flex;
+    margin-right: 10%;
 }
-h1 img{
-width: 96px;
+.header_logo{
+max-width: 96px;
 height: 126px;
 padding-left: 40px;
 }
 .pc_nav{
-    font-size: 30px;
-    width: 571px;
-    height: 40px;
-    padding: 50px 18% 0 42%;
+    padding-top: 50px;
+    padding-left: 43%;
 
 }
 .h2_logo{
 padding-right: 1%;
+width: 30%;
 }
 .pc_nav ul{
     max-width: 100%;
     display: flex;
-    text-align: right;
+    margin-bottom: 4%;
 }
 .pc_nav li{
     border-bottom: solid;
@@ -61,15 +66,17 @@ padding-right: 1%;
 .shop_picture{
     max-width: 100%;
 }
-h2{
+.top_text{
     display: flex;
     max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
 }
 .main_picture{
     width: 50%;
 }
-h2 li{
-    padding-top: 40px;
+.top_text li{
+    padding-top: 6%;
 }
 .h2_name{
     font-size: 60px;
@@ -78,7 +85,8 @@ h2 li{
     font-size: 30px;
 }
 .h2_copy{
-    font-size: 36px;
+    font-size: 2vw;
+    position: relative;
 }
 .scroll{
     font-size: 40px;
@@ -86,10 +94,11 @@ h2 li{
 }
 
 .box1{
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    width: 5%;
+    height: 40%;
     background-color: #fef007;
-    position: relative;top: -50px;right: -130px;
+    position: absolute;left: 29%;
     z-index: -100;
 
 }
@@ -113,9 +122,8 @@ h2 li{
     background-color: #CCCCCC;
 }
 .main_text{
-    margin-left: 15%;
+    margin-left: 14%;
     font-size: 60px;
-    height: 650px;
     z-index: 10;
     max-width: 100%;
 }
@@ -136,9 +144,10 @@ h3{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: flex-start;
 }
 .about_fhoto{
-    max-width: 100%;
+    max-width: 50%;
 }
 .main_text p{
     text-align: initial;
@@ -151,6 +160,7 @@ h3{
 }
 .main_text img{
     position: relative;top: -45px;left: -14px;
+    width: 100%;
 }
 .main_keireki{
     font-size: 39px;
@@ -195,10 +205,10 @@ h3{
 .work_btn{
     color: #ffffff;
     background-color: #000000;
-    width: 435px;
+    max-width: 435px;
+    width: 30%;
     height: 80px;
-    text-decoration: none;
-    font-size: 40px;
+    justify-content: center;
     text-align: center;
     border-radius: 10px;
     margin:130px auto 210px;
@@ -207,6 +217,8 @@ h3{
 }
 .work_btn_text{
     display: flex;
+    font-size: 3vw;
+    justify-content: center;
 }
 .work_btn_text2{
     color: #fef007;
@@ -251,10 +263,11 @@ position: relative;top: -20px;
 .contact_btn{
     margin: 60px auto;
     align-items: center;
-    font-size: 40px;
+    font-size: 3vw;
     color: #CCCCCC;
     background-color: #000000;
-    width: 400px;
+    max-width: 400px;
+    width: 20%;
     height: 80px;
     text-decoration: none;
     border-radius: 10px;
@@ -443,16 +456,19 @@ position: relative;top: -20px;
         position: absolute;bottom: -10px;left: 0;right: 0;
     }
     .name_sp{
-        font-size: 4vw;
+        font-size: 5vw;
         position: relative;
     }
-    .box3_sp{
+    .SP_nametext{
+        margin-top: 20%;
+    }
+    .spbox3{
         background-color: #fef007;
         width: 10px;
         height: 10px;
     }
     .main_keireki_sp{
-        font-size: 135%;
+        font-size: 4vw;
         margin: 0 auto;
         margin-left: -10px;
     }
@@ -463,8 +479,7 @@ position: relative;top: -20px;
     }
     .keirekitext_sp{
         text-align: left;
-        margin-top: -100px;
-        margin: 5%;
+        padding: 5%;
     }
     .work{
         display: none;
@@ -490,6 +505,7 @@ position: relative;top: -20px;
     .workbtn_sp{
         background-color: #000000;
         max-width: 320px;
+        width: 30%;
         margin: 20px auto;
         border-radius: 10px;
     }
@@ -500,7 +516,7 @@ position: relative;top: -20px;
     }
     .btntextsp_1{
         margin-right: 0px;
-        font-size: 29px;
+        font-size: 4vw;
     }
     .btntextsp_2{
         color: #fef007;
@@ -545,6 +561,7 @@ position: relative;top: -20px;
         font-size: 129%;
         background-color: #000000;
         max-width: 320px;
+        width: 30%;
         margin: 50px auto;
         border-radius: 10px;
         text-decoration: none;
@@ -570,6 +587,14 @@ position: relative;top: -20px;
     }
     .list_sp{
         display: none;
+    }
+    .sp_nav li{
+        height: 100%;
+        font-size: 5vw;
+        font-family:"游明朝体 Demibold","YuMincho Demibold","serif";
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
         
     }
